@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>杭州・武林夜市 3D</title>
+
+<link rel="stylesheet" href="./css/style.css">
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"
+  }
+}
+</script>
+</head>
+
+<body>
+
+<div id="loading">
+  <div class="loading-inner">
+    <div class="small">HANGZHOU · CHINA</div>
+    <h1>武林夜市</h1>
+    <div class="cn">杭州 · 武林路</div>
+
+    <div class="loading-line">
+      <div id="loadingBar"></div>
+    </div>
+
+    <div id="loadingText">夜市を準備しています...</div>
+  </div>
+</div>
+
+<div id="startScreen">
+  <div class="start-card">
+
+    <div class="small">
+      HANGZHOU · WULIN NIGHT MARKET
+    </div>
+
+    <h1>武林夜市</h1>
+
+    <div class="divider"></div>
+
+    <p>
+      杭州・武林路。<br>
+      光と人が集まる夜の街を歩く。
+    </p>
+
+    <button id="startButton">
+      夜市に入る
+    </button>
+
+    <div class="controls">
+      WASD：移動<br>
+      Shift：ダッシュ<br>
+      マウス：視点<br>
+      ESC：メニュー
+    </div>
+
+  </div>
+</div>
+
+<div id="hud">
+
+  <div class="hud-place">
+    杭州
+  </div>
+
+  <div class="hud-title">
+    武林夜市
+  </div>
+
+  <div id="zone">
+    武林路入口
+  </div>
+
+</div>
+
+<div id="clock">
+  20:18
+</div>
+
+<div id="crosshair"></div>
+
+<div id="vignette"></div>
+
+<script type="module" src="./js/main.js"></script>
+
+</body>
+</html>
